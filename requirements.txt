@@ -1,5 +1,6 @@
-fastapi
+fastapi~=0.111.0
 uvicorn
-pydantic
-sqlalchemy
+pydantic~=2.7.4
+sqlalchemy~=2.0.31
 psycopg2-binary
+python-dotenv~=1.0.1
