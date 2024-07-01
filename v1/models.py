@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, UniqueConstraint, URL
-from v1.database import Base
+from database import Base
 
 
 class Pokemon(Base):
@@ -8,4 +8,7 @@ class Pokemon(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     details = Column(String)
+
+    def __str__(self):
+        return self.username
 
