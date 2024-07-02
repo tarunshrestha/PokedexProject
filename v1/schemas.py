@@ -13,7 +13,9 @@ class PokemonSchema(BaseModel):
     id: int
     name: str
     moves: List[str]
-    images: Optional[List[str]]
+    type: str
+    image: Optional[str]
+    detail_url: str
 
     class Config:
         orm_mode = True
